@@ -7,27 +7,27 @@ import world2 from './public/planet-2.jpg'
 const exploreWorlds = [
   {
     id: 'world-1',
-    imgUrl: '../public/planet-1.png',
+    imgUrl: '../src/public/planet-1.png',
     title: 'The Upside Down',
   },
   {
     id: 'world-2',
-    imgUrl: {world2},
+    imgUrl:'../src/public/planet-2.jpg',
     title: 'The Metropolis',
   },
   {
     id: 'world-3',
-    imgUrl: '/planet-3.jpg',
+    imgUrl: '../src/public/planet-3.jpg',
     title: 'The WonderLand',
   },
   {
     id: 'world-4',
-    imgUrl: '/planet-4.jpg',
+    imgUrl: '../src/public/planet-4.jpg',
     title: 'The Jurassic World',
   },
   {
     id: 'world-5',
-    imgUrl: '/planet-5.jpg',
+    imgUrl: '../src/public/planet-5.jpg',
     title: 'The HogWards',
   },
 ];
