@@ -38,7 +38,7 @@ export const startingFeatures = [
 
 export const newFeatures = [
   {
-    imgUrl: '/vrpano.svg',
+    imgUrl: '../public/vrpano.svg',
     title: 'A new world',
     subtitle:
         'we have the latest update with new world for you to try never mind',

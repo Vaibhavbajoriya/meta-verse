@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { socials } from '../constants';
-
+import headset from '../public/headset.svg'
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
 
@@ -19,7 +19,7 @@ const Footer = () => (
         </h4>
         <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
           <img
-            src="/headset.svg"
+            src={headset}
             alt="headset"
             className="w-[24px] h-[24px] object-contain"
           />
@@ -39,17 +39,6 @@ const Footer = () => (
           <p className="font-normal text-[14px] text-white opacity-50">
             Thanks to visit!
           </p>
-
-          <div className="flex gap-4">
-            {socials.map((social) => (
-              <img
-                key={social.name}
-                src={social.url}
-                alt={social.name}
-                className="w-[24px] h-[24px] object-contain cursor-pointer"
-              />
-            ))}
-          </div>
         </div>
       </div>
     </div>

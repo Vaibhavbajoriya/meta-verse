@@ -1,10 +1,36 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-
 import styles from '../styles';
-import { exploreWorlds } from '../constants';
 import { staggerContainer } from '../utils/motion';
 import { ExploreCard, TitleText, TypingText } from '../components';
+import world2 from './public/planet-2.jpg'
+const exploreWorlds = [
+  {
+    id: 'world-1',
+    imgUrl: '../public/planet-1.png',
+    title: 'The Upside Down',
+  },
+  {
+    id: 'world-2',
+    imgUrl: {world2},
+    title: 'The Metropolis',
+  },
+  {
+    id: 'world-3',
+    imgUrl: '/planet-3.jpg',
+    title: 'The WonderLand',
+  },
+  {
+    id: 'world-4',
+    imgUrl: '/planet-4.jpg',
+    title: 'The Jurassic World',
+  },
+  {
+    id: 'world-5',
+    imgUrl: '/planet-5.jpg',
+    title: 'The HogWards',
+  },
+];
 
 const Explore = () => {
   const [active, setActive] = useState('world-2');

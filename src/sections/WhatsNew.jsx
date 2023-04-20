@@ -22,7 +22,7 @@ const WhatsNew = () => (
         <TitleText title={<>What's new about MyVerse?</>} />
         <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
           {newFeatures.map((feature) => (
-            <NewFeatures key={feature.title} {...feature} />
+            <NewFeatures imgUrl={feature.imgUrl} key={feature.title} {...feature} />
           ))}
         </div>
       </motion.div>
