@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion';
-
+import people1 from './public/people-01.png'
+import people2 from './public/people-02.png'
+import people3 from './public/people-03.png'
+import map from './public/map.png';
 import styles from '../styles';
 import { TitleText, TypingText } from '../components';
 import { fadeIn, staggerContainer } from '../utils/motion';
@@ -28,18 +31,18 @@ const World = () => (
         variants={fadeIn('up', 'tween', 0.3, 1)}
         className="relative mt-[68px] flex w-full h-[550px]"
       >
-        <img src="/map.png" alt="map" className="w-full h-full object-cover" />
+        <img src={map} alt="map" className="w-full h-full object-cover" />
 
-        <div className="absolute bottom-20 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
-          <img src="people-01.png" alt="people" className="w-full h-full" />
+        <div className="absolute bottom-15 right-25 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
+          <img src={people1} alt="people" className="w-full h-full" />
         </div>
 
-        <div className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
-          <img src="/people-02.png" alt="people" className="w-full h-full" />
+        <div className="absolute top-40 right-20 left-50 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
+          <img src={people2} alt="people" className="w-full h-full" />
         </div>
 
         <div className="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
-          <img src="people-03.png" alt="people" className="w-full h-full" />
+          <img src={people3} alt="people" className="w-full h-full" />
         </div>
       </motion.div>
     </motion.div>

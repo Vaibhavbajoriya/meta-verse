@@ -1,3 +1,7 @@
+import twitter from '../public/twitter.svg'
+import insta from '../public/instagram.svg'
+import facebook from '../public/facebook.svg'
+
 export const exploreWorlds = [
   {
     id: 'world-1',
@@ -71,7 +75,7 @@ export const insights = [
 export const socials = [
   {
     name: 'twitter',
-    url: '/twitter.svg',
+    url: {twitter},
   },
   {
     name: 'linkedin',
